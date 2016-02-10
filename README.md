@@ -6,5 +6,5 @@ PHP class for native reading WAV (RIFF-WAVE) metadata and generating SVG-Wavefor
 
 TODO
 --------
-- add PHPDoc comments
-- add option for changing precision
+- find solution for styling waveform via CSS (maybe allow setup of a style path)
+- move SVG code to external file (so everyone can modify the code meeting all needs)
