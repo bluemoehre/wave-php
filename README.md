@@ -3,13 +3,14 @@ wave-php
 
 PHP class for native reading WAV (RIFF-WAVE) metadata and generating SVG-Waveforms. (PCM only)
 
+Installation
+------------
 
-TODO
---------
-- find solution for styling waveform via CSS (maybe allow setup of a style path)
-- move SVG code to external file (so everyone can modify the code meeting all needs)
-- configurable vertical SVG detail
+This class can easily be installed via [Composer](https://getcomposer.org):  
+`composer require bluemoehre/wave-php`
 
+Alternatively you may include it the old fashioned way of downloading and adding it via  
+`require 'wave.php'`
 
 How to use
 ----------
@@ -38,3 +39,9 @@ Generate multiple SVGs:
   
   ```
   
+TODO
+--------
+- add support for hi-res wave files
+- find solution for styling waveform via CSS (maybe allow setup of a style path)
+- move SVG code to external file (so everyone can modify the code meeting all needs)
+- configurable vertical SVG detail
