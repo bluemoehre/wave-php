@@ -7,7 +7,7 @@ class WaveTest extends TestCase
 {
   public function test()
   {
-    $wave = new Wave('fixtures/20-20000Hz.wav');
+    $wave = new Wave('fixtures/44100Hz-16bit-1ch.wav');
     $this->assertEquals(1, $wave->getChannels(), 'Channel count should match');
     $this->assertEquals(44100, $wave->getSampleRate(), 'Sample rate should match');
     $this->assertEquals(88200, $wave->getByteRate(), 'Byte rate should match');
@@ -16,6 +16,6 @@ class WaveTest extends TestCase
     $this->assertEquals(441000, $wave->getTotalSamples(), 'Total samples should match');
     $this->assertEquals(10, $wave->getTotalSeconds(), 'Total seconds should match');
     $this->assertEquals(10.0, $wave->getTotalSeconds(true), 'Total seconds with decimals should match');
-    $this->assertEquals(file_get_contents('./tests/snapshots/20-20000Hz.svg'), $wave->generateSvg(), 'SVG should match snapshot');
+    $this->assertEquals(file_get_contents('./tests/snapshots/44100Hz-16bit-1ch.svg'), $wave->generateSvg(), 'SVG should match snapshot');
   }
 }
