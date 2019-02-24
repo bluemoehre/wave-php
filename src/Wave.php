@@ -1,5 +1,11 @@
 <?php
 
+namespace bluemoehre;
+
+use Exception;
+use RuntimeException;
+use UnexpectedValueException;
+
 /**
  * @license GNU General Public License v2 http://www.gnu.org/licenses/gpl-2.0
  * @author BlueMöhre <bluemoehre@gmx.de>
@@ -18,89 +24,55 @@ class Wave
 
     const SVG_DEFAULT_RESOLUTION_FACTOR = 0.01;
 
-    /**
-     * @var string
-     */
+    /** @var string */
     protected $file;
 
-    /**
-     * @var string
-     */
+    /** @var string */
     protected $chunkId;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $chunkSize;
 
-    /**
-     * @var string
-     */
+    /** @var string */
     protected $format;
 
-    /**
-     * @var string
-     */
+    /** @var string */
     protected $subChunk1Id;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $subChunk1Size;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $audioFormat;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $channels;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $sampleRate;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $byteRate;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $blockAlign;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $bitsPerSample;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $subChunk2Size;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $dataOffset;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $kiloBitPerSecond;
 
-    /**
-     * @var integer
-     */
+    /** @var int */
     protected $totalSamples;
 
-    /**
-     * @var float
-     */
+    /** @var float */
     protected $totalSeconds;
 
 
