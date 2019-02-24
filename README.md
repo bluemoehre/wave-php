@@ -49,7 +49,7 @@ Generate multiple SVGs:
 Methods
 -------
 
-- **generateSvg( `string` $outputFile [, `float` $resolution ] )** : `string`  
+- **generateSvg(** `string` $outputFile [, `float` $resolution ] **)** : `string`  
   Returns the waveform as SVG code. Optionally saves the output to the given filename.
 
 - **getBitsPerSample()** : `integer`  
@@ -70,7 +70,7 @@ Methods
 - **getTotalSamples()** : `integer`  
   Returns the total audio sample count
 
-- **getTotalSeconds( `boolean` $float** **)** : `integer` | `float`  
+- **getTotalSeconds(** `boolean` $float **)** : `integer` | `float`  
   Returns the audio length in seconds. Rounded by default - optinonally precise
 
 
