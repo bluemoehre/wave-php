@@ -3,6 +3,6 @@
   "description": "PHP class for native reading WAV (RIFF-WAVE) metadata and generating SVG-Waveforms. (PCM only)",
   "license": "GPL-2.0-only",
   "autoload": {
-    "classmap": ["Wave.php"]
+    "classmap": ["src/Wave.php"]
   }
 }
