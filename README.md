@@ -49,28 +49,28 @@ Generate multiple SVGs:
 Methods
 -------
 
-- **generateSvg( `string` $outputFile [, `float` $resolution ] )** : `string`
+- **generateSvg( `string` $outputFile [, `float` $resolution ] )** : `string`  
   Returns the waveform as SVG code. Optionally saves the output to the given filename.
 
-- **getBitsPerSample()** : `integer`
+- **getBitsPerSample()** : `integer`  
   Returns the bits per sample count
 
-- **getByteRate()** : `integer`
+- **getByteRate()** : `integer`  
   Returns the audio byte rate
 
-- **getChannels()** : `integer`
+- **getChannels()** : `integer`  
   Returns the audio channel count
 
-- **getKiloBitPerSecond()** : `float`
+- **getKiloBitPerSecond()** : `float`  
   Returns the data rate of the audio
 
-- **getSampleRate()** : `integer`
+- **getSampleRate()** : `integer`  
   Returns the audio sample rate
 
-- **getTotalSamples()** : `integer`
+- **getTotalSamples()** : `integer`  
   Returns the total audio sample count
 
-- **getTotalSeconds( `boolean` $float** **)** : `integer` | `float`
+- **getTotalSeconds( `boolean` $float** **)** : `integer` | `float`  
   Returns the audio length in seconds. Rounded by default - optinonally precise
 
 
