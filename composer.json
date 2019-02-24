@@ -4,5 +4,8 @@
   "license": "GPL-2.0-only",
   "autoload": {
     "classmap": ["src/Wave.php"]
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.7.*"
   }
 }
