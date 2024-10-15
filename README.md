@@ -1,4 +1,4 @@
-wave-php  [![Build Status](https://travis-ci.org/bluemoehre/wave-php.svg?branch=master)](https://travis-ci.org/bluemoehre/wave-php)
+wave-php [![Build Status](https://github.com/bluemoehre/wave-php/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/bluemoehre/wave-php/actions/workflows/ci.yml)
 ========
 
 PHP class for native reading WAV (RIFF-WAVE) metadata and generating SVG-Waveforms. (PCM only)
